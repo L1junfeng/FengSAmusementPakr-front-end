@@ -1,4 +1,4 @@
-# SpringCloud 项目-尚品甄选管理端前端代码
+<!-- # SpringCloud 项目-尚品甄选管理端前端代码
 
 # 必看❗️❗️
 
@@ -45,4 +45,4 @@
 
 #### 前端启动方式
 
-前端启动需要大家有装nodejs，我在gitee已经上传了前端依赖，大家拉取下载之后用vs或者其他的工具打开，输入yarn run dev或者npm run dev启动就可以了
+前端启动需要大家有装nodejs，我在gitee已经上传了前端依赖，大家拉取下载之后用vs或者其他的工具打开，输入yarn run dev或者npm run dev启动就可以了 -->
