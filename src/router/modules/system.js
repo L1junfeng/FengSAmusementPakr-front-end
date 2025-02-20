@@ -11,7 +11,7 @@ export default([
         component: Layout,
         name: 'system',
         meta: {
-            title: '基础管理',
+            title: '系统管理',
         },
         icon: 'Location',
         children: [
@@ -20,7 +20,7 @@ export default([
                 name: 'sysRole',
                 component: sysRole,
                 meta: {
-                    title: '设施管理',
+                    title: '角色管理',
                 },
                 hidden: false
             },
@@ -29,7 +29,7 @@ export default([
                 name: 'sysUser',
                 component: sysUser,
                 meta: {
-                    title: '评论管理',
+                    title: '用户管理',
                 },
                 hidden: false
             },
@@ -38,7 +38,7 @@ export default([
                 name: 'sysMenu',
                 component: sysMenu,
                 meta: {
-                    title: '项目管理',
+                    title: '菜单管理',
                 },
                 hidden: false
             }

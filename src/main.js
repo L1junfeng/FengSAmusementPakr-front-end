@@ -41,6 +41,7 @@ const app = createApp(App)
 
 // 引入element-plus
 import ElementPlus from 'element-plus'
+// import 'element-plus/dist/index.css'
 import './assets/style/element-variables.scss'
 
 // 国际化

@@ -1,16 +1,21 @@
 import type { CSSProperties, ComputedRef, Ref, SetupContext } from 'vue';
+import type { SliderProps } from '../slider';
 import type { SliderButtonEmits, SliderButtonInitData, SliderButtonProps } from '../button';
-export declare const useSliderButton: (props: SliderButtonProps, initData: SliderButtonInitData, emit: SetupContext<SliderButtonEmits>['emit']) => {
+import type { TooltipInstance } from 'element-plus/es/components/tooltip';
+type HTMLType = HTMLDivElement | undefined;
+type useSliderButtonType = (props: SliderButtonProps, initData: SliderButtonInitData, emit: SetupContext<SliderButtonEmits>['emit']) => {
     disabled: Ref<boolean>;
-    button: Ref<HTMLDivElement | undefined>;
-    tooltip: Ref<any>;
+    button: Ref<HTMLType>;
+    tooltip: Ref<TooltipInstance | undefined>;
     tooltipVisible: Ref<boolean>;
-    showTooltip: Ref<import("../../../../utils").EpPropMergeType<BooleanConstructor, unknown, unknown>>;
+    showTooltip: Ref<SliderProps['showTooltip']>;
     wrapperStyle: ComputedRef<CSSProperties>;
-    formatValue: ComputedRef<string | number>;
+    formatValue: ComputedRef<number | string>;
     handleMouseEnter: () => void;
     handleMouseLeave: () => void;
     onButtonDown: (event: MouseEvent | TouchEvent) => void;
     onKeyDown: (event: KeyboardEvent) => void;
     setPosition: (newPosition: number) => Promise<void>;
 };
+export declare const useSliderButton: useSliderButtonType;
+export {};

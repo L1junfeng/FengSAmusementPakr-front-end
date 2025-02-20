@@ -1,6 +1,5 @@
-import '../../utils/index.mjs';
-import Switch from './src/switch2.mjs';
-export { switchEmits, switchProps } from './src/switch.mjs';
+import Switch from './src/switch.mjs';
+export { switchEmits, switchProps } from './src/switch2.mjs';
 import { withInstall } from '../../utils/vue/install.mjs';
 
 const ElSwitch = withInstall(Switch);

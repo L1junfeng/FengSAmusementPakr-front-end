@@ -1,23 +1,22 @@
-import '../../../utils/index.mjs';
-import { buildProps, definePropType } from '../../../utils/vue/props/runtime.mjs';
+import { defineComponent, renderSlot, openBlock, createBlock, Teleport as Teleport$1 } from 'vue';
+import { teleportProps } from './teleport2.mjs';
+import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 
-const teleportProps = buildProps({
-  container: {
-    type: definePropType(String),
-    default: "body"
-  },
-  disabled: {
-    type: Boolean,
-    default: false
-  },
-  style: {
-    type: definePropType([String, Array, Object])
-  },
-  zIndex: {
-    type: String,
-    default: "2000"
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "teleport",
+  props: teleportProps,
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return _ctx.disabled ? renderSlot(_ctx.$slots, "default", { key: 0 }) : (openBlock(), createBlock(Teleport$1, {
+        key: 1,
+        to: _ctx.to
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 8, ["to"]));
+    };
   }
 });
+var Teleport = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "teleport.vue"]]);
 
-export { teleportProps };
+export { Teleport as default };
 //# sourceMappingURL=teleport.mjs.map

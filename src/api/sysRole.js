@@ -1,16 +1,27 @@
 import request from '@/utils/request'
 
 // 分页查询角色数据
-export const GetSysRoleListByPage = (current , limit , queryDto) => {
+// export const GetSysRoleListByPage = (current , limit , queryDto) => {
+//     return request({
+//         // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
+//         url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口
+//         method: 'post',//提交方式
+//         //后端接口如果是@RequestBody，需要用data
+//         //如果没有注解,前端是params：名称
+//         data: queryDto,
+//     })
+// }
+
+export const GetSysRoleListByPage = (current , limit) => {
     return request({
         // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
         url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口
         method: 'post',//提交方式
         //后端接口如果是@RequestBody，需要用data
         //如果没有注解,前端是params：名称
-        data: queryDto,
     })
 }
+
 
 // 添加角色请求方法
 export const SaveSysRole = (sysRole) => {

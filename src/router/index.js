@@ -41,8 +41,11 @@ import test from './modules/test'
 /* 菜单栏的路由 */
 // 固定菜单
 import system from './modules/system'
+import project from './modules/project'
+import employee from './modules/employee'
 // 固定菜单
-export const fixedRoutes = [...home,...test,...system,...product,...order]
+// export const fixedRoutes = [...home,...test,...system,...product,...order,...project,...employee]
+export const fixedRoutes = [...home,...test,...project,...employee]
 import product from './modules/product'
 import order from './modules/order'
 // 动态菜单
